@@ -333,7 +333,7 @@ border-bottom-right-radius: 1rem;
 .brown {
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#CC9900), to(#A37A00));
 	background-image: -moz-linear-gradient(19% 75% 90deg, #A37A00, #CC9900);
-	background-color: #c90;
+	background-color: #c90;}
 
     /* --------------------------
 		MEDIA
