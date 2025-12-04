@@ -24,11 +24,11 @@
     #one {background-color:turquoise; grid-area:header;}
     #two {grid-area:nav;}
     #three {background-color:orange; grid-area:feature;}
-    #four {background-color:yellow; grid-area:main;}
-    #five {background-color:yellowgreen; grid-area:quotes;}
+    #four {grid-area:main;}
+    #five {background-color:#c2d5de; grid-area:quotes;}
     #six {background-color:black; grid-area:footer;}
 
-    #three, #four, #five, #six {padding:20px 30px;}
+    #three, #five, #six {padding:20px 30px;}
 
     
 
@@ -53,31 +53,46 @@
     }
     .floatleftdrop {
         float: left;
-        margin: .2rem 2rem 1rem 2rem;
+        margin: .2rem 2rem 1rem 0rem;
         clear: left;
     }
+
+    /* --------------------------
+	CLEARFIX
+------------------------------ */
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
 
     /* --------------------------
 		TYPOGRAPHY
 ------------------------------ */
 
-    p {margin-bottom:1rem;}
+    p, li {margin-bottom:1rem;}
     h1, h2  {color:#026396; font-family:'Philosopher', Verdana, Arial, helvetica, sans-serif; font-weight:700; line-height:1.2; margin-bottom:1.5rem;}
     h1 {font-size:3rem;}
     h2 {font-size:2.5rem; margin-top:2rem;}
     header h2, footer {background-color:#026396;}
     h3 {margin:2rem 0 1.5rem 0;}
+    .barheadinline h3 {margin:0;}
 
     .barheadinline {
-        width:auto;
-        padding:.6rem 0 0 0;
-        float:left;
-        margin-bottom:1.2rem;
-        margin-left:-1.2rem;
-        margin-top:-1rem;
         font-size:1.6rem;
         font-weight:bold;
-        color:#fff;
+        color:#fff;        
+        float:left;
+        margin:-1rem 0 1.2rem -1.2rem;
+        padding:.6rem 1.5rem;
+
         -webkit-box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.5);
            -moz-box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.5);
                 box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.5);
@@ -86,6 +101,14 @@
     .barheadinline + h2, .barheadinline + h3 {
         clear: both;
     }
+
+    .feature, .testimonials {
+        background-color:#f6f2ec;
+        clear:both;
+        padding:2rem;
+        }
+    .feature:first-child {margin-top:0;}
+    p + .feature {margin-top:2rem;}
 
     .red {color:#900;}
 
@@ -251,6 +274,66 @@ nav li p {margin:0; padding:0; font-size:1.4rem;  font-weight:bold; color:white;
 }
 .video-meta-container2 {margin-bottom:.6rem; }
 
+/* --------------------------
+ROUNDED CORNERS
+------------------------------ */
+
+.c, .testimonials, .block p, #one, #three, #four, #five, #six {
+    -moz-border-radius: 1rem;
+ -webkit-border-radius: 1rem;
+           border-radius: 1rem;
+}
+.barheadinline {
+    -moz-border-radius: 2rem;
+ -webkit-border-radius: 2rem;
+           border-radius: 2rem;
+}.lc {
+-moz-border-radius: 1rem 0 0 1rem;
+-webkit-border-radius: 1rem 0 0 1rem;
+border-radius: 1rem 0 0 1rem;
+}
+.rc {
+-moz-border-radius: 0 1rem 1rem 0;
+-webkit-border-radius: 0 1rem 1rem 0;
+border-radius: 0 1rem 1rem 0;
+}
+.tc {
+-moz-border-radius: 1rem 1rem 0 0;
+-webkit-border-radius: 1rem 1rem 0 0;
+   border-radius: 1rem 1rem 0 0;
+}
+.bc, #bar, header  {
+-moz-border-radius: 0 0 1rem 1rem;
+-webkit-border-radius: 0 0 1rem 1rem;
+border-radius: 0 0 1rem 1rem;
+}
+.tlc {
+-moz-border-radius-topleft: 1rem;
+-webkit-border-top-left-radius: 1rem;
+border-top-left-radius: 1rem;
+}
+.trc {
+-moz-border-radius-topright: 1rem;
+-webkit-border-top-right-radius: 1rem;
+border-top-right-radius: 1rem;
+}
+.blc {
+-moz-border-radius-bottomleft: 1rem;
+-webkit-border-bottom-left-radius: 1rem;
+border-bottom-left-radius: 1rem;
+}
+.brc {
+-moz-border-radius-bottomright: 1rem;
+-webkit-border-bottom-right-radius: 1rem;
+border-bottom-right-radius: 1rem;
+}
+    /* --------------------------
+		COLOR
+------------------------------ */
+.brown {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#CC9900), to(#A37A00));
+	background-image: -moz-linear-gradient(19% 75% 90deg, #A37A00, #CC9900);
+	background-color: #c90;
 
     /* --------------------------
 		MEDIA
