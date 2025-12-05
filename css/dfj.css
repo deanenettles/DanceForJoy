@@ -23,14 +23,19 @@
 
     #one {background-color:turquoise; grid-area:header;}
     #two {grid-area:nav;}
-    #three {background-color:orange; grid-area:feature;}
+    #three {
+        grid-area:feature; 
+        display:flex; 
+        justify-content:center; 
+        flex-wrap:wrap; 
+        flex-direction:row;
+        gap:1rem;
+    }
     #four {grid-area:main;}
     #five {background-color:#c2d5de; grid-area:quotes;}
-    #six {background-color:black; grid-area:footer;}
+    #six {background-color:#026396; grid-area:footer;}
 
-    #three, #five, #six {padding:20px 30px;}
-
-    
+    #five, #six {padding:20px 30px;}
 
     .hide {display:none;}
 
@@ -272,7 +277,38 @@ nav li p {margin:0; padding:0; font-size:1.4rem;  font-weight:bold; color:white;
 	width: 100%;
 	height: 100%;
 }
-.video-meta-container2 {margin-bottom:.6rem; }
+
+.video-meta-container2 {margin-bottom:2.5rem;}
+
+/* --------------------------
+		BLOCKS
+------------------------------ */
+.block, .video-container {margin-bottom:1.5rem;}
+.block {
+		width:100%;
+		max-width:30rem;
+  		height:17.5rem;
+  		display:table;
+		background-color:white;
+}
+.blockplain {padding:0; margin:-1rem 0 0 -1rem;}
+.blockheadline {
+		color:white;
+		font-size:1.8rem;
+		font-style:normal;
+		line-height:1.2;
+		}
+.block p {
+		text-align:center;
+		vertical-align:bottom;
+		color:#ddd;
+		font-size:1.2rem;
+		font-weight:bold;
+		display:table-cell;
+		padding:1rem;
+		letter-spacing:.5px;
+		text-shadow: 0 .2rem .2rem rgba(0, 0, 0, .9);
+		}
 
 /* --------------------------
 ROUNDED CORNERS
@@ -356,6 +392,10 @@ border-bottom-right-radius: 1rem;
         "footer footer";
         gap:20px 20px;
         padding-bottom:20px;
-    }
+        }
+        #three {
+            flex-direction:column;
+            justify-content:flex-start;
+        }
 
     }

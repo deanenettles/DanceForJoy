@@ -1,13 +1,27 @@
+a.block {width:45%; margin-bottom:.75rem;}
+
+/* DANCE TIL DUSK AD */
+.dtd {background-color:black; text-align:center; padding:5px; line-height:1.4;}
+.dtd a:link, .dtd a:visited {color:white; font-size:1.6rem;}
+.dtd a:hover, .dtd .a:focus, .dtd a:active {color:dodgerblue;}
 .blockprivates {background:url(../images/blocks/privates300x200.jpg) no-repeat top center;}
 
-.blockvideos {background:url("../images/blocks/LilliClaire300x200_©john_fehringer.jpg") no-repeat top center;}
+.blockvideos {
+	background:url("../images/blocks/LilliClaire300x200_©john_fehringer.jpg") no-repeat top center;
+	font-family:'Philosopher', Georgia, serif; font-size:24px;
+	text-align:left; 
+	font-weight:normal;
+}
+.blockvideos p {font-size:1.4rem;}
+
+.blockvideos:hover {border:1px solid red;}
 
 .blockemail {background:url(../images/blocks/email300x200.jpg) no-repeat top center; background-size:cover;}
 
 .blockdusk {background:url(../images/dancedusk/2015/DFJ-Rotating-Ad2.gif) no-repeat top center; background-size:cover;}
 
 .blockrealestate {height:225px; background:#222d63 url(../images/realestate/houses.png) no-repeat top center; padding-bottom:10px;}
-.blockrealestate p {width:100%; float:left; clear:left; margin:0; padding:0 10px 10px 10px;}
+.blockrealestate p {width:100%; float:left; clear:left; padding:0 10px 10px 10px;}
 .blockrealestate p {margin-top:120px;}
 .blockrealestate p.button {font-size:14px;background-color:#f6a43a; width:80%; margin:0 0 10px 10%; padding-top:5px;}
 .blockrealestate p.button:hover {background-color:#f7bc6f;}
@@ -18,12 +32,10 @@
 ------------------------------ */
 
 .facebook {
-	width:100%;
+	display:table;
 	float:left;
 	padding:1.2rem 2rem 1rem 2rem;
 	background-color:#dfdfdf;
-	margin-bottom:1rem;
-	height:8.75rem;
 	}
 .facebook img {margin-right:1rem; float:left;}
 .facebook div {display:table-cell; vertical-align:middle;}
@@ -33,5 +45,10 @@
 
   .middle { vertical-align: middle; }
 
-  .facebook {display:table;}
+  /* --------------------------
+	MEDIA
+------------------------------ */
 
+  @media screen and (min-width:700px) {
+	.block {width:100%;}
+  }
