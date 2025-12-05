@@ -104,7 +104,7 @@
     }
     
     .barheadinline + h2, .barheadinline + h3 {
-        clear: both;
+        clear: both; /* h2 or h3 preceeded by .barheadinline */
     }
 
     .feature, .testimonials {
@@ -113,12 +113,15 @@
         padding:2rem;
         margin-bottom:2rem;
         }
-    .feature:first-child {margin-top:0;}
-    p + .feature {margin-top:2rem;}
+    .feature:first-child {margin-top:0;} /* first .feature gets top of 0. if first element isn't .feature, it won't apply at all. */
+
+    p + .feature {margin-top:2rem;} /* a .feature immediately preceeded by a p element */
 
     .red {color:#900;}
 
     #four ul { list-style-type: none; padding-left:2rem;}
+
+    hr {margin:2rem 0;}
 
 
     /* --------------------------
@@ -398,5 +401,6 @@ border-bottom-right-radius: 1rem;
             flex-direction:column;
             justify-content:flex-start;
         }
+        .hide {display:block;}
 
     }
