@@ -58,7 +58,7 @@
     }
     .floatleftdrop {
         float: left;
-        margin: .2rem 2rem 1rem 0rem;
+        margin: .2rem 2rem 0 0rem;
         clear: left;
     }
 
