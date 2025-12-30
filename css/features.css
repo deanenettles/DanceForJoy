@@ -7,8 +7,9 @@
 .blockprivates {background:url(../images/blocks/privates300x200.jpg) no-repeat top center;}
 
 .blockvideos {
-	background:url("../images/blocks/LilliClaire300x200_©john_fehringer.jpg") no-repeat top center;
-	font-family:'Philosopher', Georgia, serif; font-size:24px;
+	background:url("../images/blocks/LA-and-Claire-İfehringer.jpg") no-repeat top center;
+	padding-top:60px;
+ font-size:24px;
 	text-align:left; 
 	font-weight:normal;
 }
@@ -16,7 +17,7 @@
 
 .blockvideos:hover {border:1px solid red;}
 
-.blockemail {background:url(../images/blocks/email300x200.jpg) no-repeat top center; background-size:cover;}
+.blockemail {background:url(../images/blocks/privates300x200.jpg) no-repeat top center; background-size:cover;}
 
 .blockdusk {background:url(../images/dancedusk/2015/DFJ-Rotating-Ad2.gif) no-repeat top center; background-size:cover;}
 
