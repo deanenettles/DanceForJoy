@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partner Dance Classes in Seattle — Dance for Joy!</title>
+<meta content="Dance for Joy! gives dance lessons in Waltz, Swing, and Blues so you come to know the joy, fun and laughter of dancing together." name="Description">
+<meta content="dance lesson, dance lessons, partner dance, social dance, couples dance, dance seattle, seattle dance, dance for joy, joy, dance lessons, lessons in dance, seattle, zydeco dancing, blues dancing, waltz dancing, salsa dancing, swing, lindy, swing dance, jitterbug dancing, partner dancing, dancing, social dance, classes, class, dance workshop, dancing workshops, couple dance" name="Keywords">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/dfj.css" rel="stylesheet">
+<!-- <link href="css/features.css" rel="stylesheet"> -->
+<style>
+ {outline:1px solid red;}
+
+   /* --------------------------
+	MASONRY
+------------------------------ */
+  /* This is the non-masonry columns; columns flow top-to-bottom of first column then over to second column instead of across top of first three columns and then down */
+.grid {
+	--gap: 1em;
+	--columns: 2;
+	max-width: 80rem;
+	margin: 0 auto;
+	display: column;
+	columns: var(--columns);
+	gap: var(--gap);
+  }
+.grid img {width:100%;}
+
+  @media only screen and (min-width: 700px){
+	  .grid {
+		  --columns: 1;
+		 max-width: 30rem;
+	  }
+  }
+  
+  /* This avoids breaking items across columns */
+  .grid > * {
+	break-inside: avoid;
+	margin-bottom: var(--gap);
+  }
+  
+  /* LOOKS FOR BROWSER SUPPORT */
+  @supports (grid-template-rows: masonry) {
+	.grid {
+	  display: grid;
+	  grid-template-columns: repeat(var(--columns), 1fr);
+	  grid-template-rows: masonry;
+	  grid-auto-flow: dense;
+	  /* align-tracks: stretch; */
+	}
+  
+	.grid > * {
+	  margin-bottom: 0em;
+	}
+  }
+
+.display {
+        position: relative;
+
+    }
+
+    .display a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none; /* No underlines on the link */
+        z-index: 10; /* Places the link above everything else in the div */
+        background-color: #FFF; /* Fix to make div clickable in IE */
+        opacity: 0; /* Fix to make div clickable in IE */
+        filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+    }
+
+    .display img {width:100%;}
+
+    .video {
+        background:url("images/blocks/LA-and-Claire-ifehringer.jpg") no-repeat top center;
+        background-size:cover;
+        color:white;
+        text-align:center;
+        padding:10rem 1rem 1rem 1rem;
+    }
+
+    .email {
+        background:url("images/blocks/email300x200.jpg") no-repeat top center;
+        color:white;
+        text-align:center;
+        padding:1rem;
+    }
+
+    .facebook {
+        background-color:gray;
+        color:white;
+        padding:1rem;
+    }
+    .facebook div {display:flex;
+        flex-direction:row;}
+    .facebook td:first-child {width:30%;}   
+    .facebook tr img {width:100%;}
+    .facebook tr h3 {padding-left:1rem;}
+
+    </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="display dtd c">
+                <a href="dtd/index.html"></a>
+                <img class="c" src="images/dancedusk/2025/DTD2025.jpg" alt="Dancing til Dusk logo, Join us for more dancing July and August 2026">
+            </div>
+            <div class="display video c">
+                <a href="http://www.example.com"></a>
+                <h3>DFJ Dance<br>
+                    Instruction Videos</h3>
+                    <p>Watch our videos on YouTube; subscribe and you'll be notified when we release new&nbsp;ones!</p>
+            </div>
+            <div class="display email c">
+                <a href="http://eepurl.com/dNchs" target="_blank" title="Add me to your mailing list"></a>
+                <h3>Email List</h3>
+                <p>Join our list to be up-to-date on classes, events, workshops, and other happenings!</p>
+            </div>
+            <div class="display facebook c">
+                <a href="http://www.facebook.com/pages/Dance-for-Joy/285858457914" target="_blank"></a>
+                <table>
+                    <tr>
+                        <td><img src="images/blocks/facebook.png" alt="Facebook logo"></td>
+                        <td><h3>Like us on Facebook</h3></td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+    </body>
+    </html>

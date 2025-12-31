@@ -1,11 +1,55 @@
-.block {width:45%; margin-bottom:.75rem;}
 
-/* DANCE TIL DUSK AD */
-.dtd {background-color:black; text-align:center; padding:5px; line-height:1.4;}
-.dtd a:link, .dtd a:visited {color:white; font-size:1.6rem;}
-.dtd a:hover, .dtd .a:focus, .dtd a:active {color:dodgerblue;}
-.blockprivates {background:url(../images/blocks/privates300x200.jpg) no-repeat top center;}
 
+* {outline:1px solid red;}
+
+
+  /* --------------------------
+	MASONRY
+------------------------------ */
+  /* This is the non-masonry columns; columns flow top-to-bottom of first column then over to second column instead of across top of first three columns and then down */
+.grid {
+	--gap: 1em;
+	--columns: 2;
+	max-width: 80rem;
+	margin: 0 auto;
+	display: column;
+	columns: var(--columns);
+	gap: var(--gap);
+  }
+.grid img {width:100%;}
+
+  @media only screen and (min-width: 700px){
+	  .grid {
+		  --columns: 1;
+		 max-width: 30rem;
+	  }
+  }
+  
+  /* This avoids breaking items across columns */
+  .grid > * {
+	break-inside: avoid;
+	margin-bottom: var(--gap);
+  }
+  
+  /* LOOKS FOR BROWSER SUPPORT */
+  @supports (grid-template-rows: masonry) {
+	.grid {
+	  display: grid;
+	  grid-template-columns: repeat(var(--columns), 1fr);
+	  grid-template-rows: masonry;
+	  grid-auto-flow: dense;
+	  /* align-tracks: stretch; */
+	}
+  
+	.grid > * {
+	  margin-bottom: 0em;
+	}
+  }
+
+  /* DANCE TIL DUSK AD */
+.dusk img {width:100%;}
+
+/* VIDEOS */
 .blockvideos {
 	background:url("../images/blocks/LA-and-Claire-ifehringer.jpg") no-repeat top center;
 	padding-top:60px;
@@ -15,18 +59,11 @@
 }
 .blockvideos p {font-size:1.4rem;}
 
-.blockvideos:hover {border:1px solid red;}
 
+/* EMAILS */
 .blockemail {background:url(../images/blocks/privates300x200.jpg) no-repeat top center; background-size:cover;}
 
-.blockdusk {background:url(../images/dancedusk/2015/DFJ-Rotating-Ad2.gif) no-repeat top center; background-size:cover;}
 
-.blockrealestate {height:225px; background:#222d63 url(../images/realestate/houses.png) no-repeat top center; padding-bottom:10px;}
-.blockrealestate p {width:100%; float:left; clear:left; padding:0 10px 10px 10px;}
-.blockrealestate p {margin-top:120px;}
-.blockrealestate p.button {font-size:14px;background-color:#f6a43a; width:80%; margin:0 0 10px 10%; padding-top:5px;}
-.blockrealestate p.button:hover {background-color:#f7bc6f;}
-.blockrealestate a:link {color: white; text-shadow:rgba(0,0,0,0.00)}
 
 /* --------------------------
 	FACEBOOK ALIGNMENT
@@ -37,7 +74,7 @@
 	padding:1.2rem 2rem 1rem 2rem;
 	background-color:#dfdfdf;
 	}
-.facebook img {margin-right:1rem; float:left;}
+.facebook img {margin-right:1rem; }
 .facebook div {display:table-cell; vertical-align:middle;}
 .facebook h4 {display:table-cell; vertical-align:middle; font-size:1.6rem;}
   .icon   { display: inline-block;

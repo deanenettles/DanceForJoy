@@ -25,13 +25,14 @@
     #two {grid-area:nav;}
     #three {
         grid-area:feature; 
-        display:flex; 
+        /*display:flex; 
         justify-content:center; 
         flex-wrap:wrap; 
         flex-direction:row;
-        gap:1rem;
+        gap:1rem;*/
     }
     #four {grid-area:main;}
+    #four article:first-child {padding-bottom:1rem; }
     #five {background-color:#c2d5de; grid-area:quotes;}
     #six {background-color:#026396; grid-area:footer;}
 
@@ -289,7 +290,7 @@ nav li p {margin:0; padding:0; font-size:1.4rem;  font-weight:bold; color:white;
 /* --------------------------
 		BLOCKS
 ------------------------------ */
-.block, .video-container {margin-bottom:1.5rem;}
+/*.block, .video-container {margin-bottom:1.5rem;}
 .block {
 		width:100%;
 		max-width:30rem;
@@ -314,13 +315,13 @@ nav li p {margin:0; padding:0; font-size:1.4rem;  font-weight:bold; color:white;
 		padding:1rem;
 		letter-spacing:.5px;
 		text-shadow: 0 .2rem .2rem rgba(0, 0, 0, .9);
-		}
+		} */
 
 /* --------------------------
 ROUNDED CORNERS
 ------------------------------ */
 
-.c, .testimonials, .block p, #one, #three, #four, #five, #six {
+.c, .testimonials, .block p, #one, #three, #five, #six {
     -moz-border-radius: 1rem;
  -webkit-border-radius: 1rem;
            border-radius: 1rem;
