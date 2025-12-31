@@ -66,14 +66,14 @@
         background-size:cover;
         color:white;
         text-align:center;
-        padding:10rem 1rem 1rem 1rem;
+        padding:10rem 1.5rem 1.5rem 1.5rem;
     }
 
     .email {
         background:url("../images/blocks/email300x200.jpg") no-repeat top center;
         color:white;
         text-align:center;
-        padding:1rem;
+        padding:1.5rem;
     }
 
     .facebook {
@@ -84,7 +84,7 @@
     .facebook div {display:flex;
         flex-direction:row;}
     .facebook td:first-child {width:30%;}   
-    .facebook tr img {width:100%;}
-    .facebook tr h3 {padding-left:1rem;}
+    .facebook tr img {width:80%; margin-left:1rem}
+    .facebook tr h3 {padding:0 0 1rem 1rem; }
 
     .display p {text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);}
