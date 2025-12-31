@@ -1,6 +1,6 @@
     html {box-sizing:border-box; margin:0; padding:0; font-family:'Alegreya+Sans', Verdana, Arial, helvetica, sans-serif; font-weight:400; font-size:62.5%; -webkit-text-size-adjust: 100%;line-height:1.4;}
     * {box-sizing:inherit; margin:0; padding:0;}
-    {outline:1px solid red;}
+    * {outline:1px solid red;}
     #wrapper {
         font-size:1.4rem; 
         width:100%;
@@ -32,7 +32,7 @@
         gap:1rem;*/
     }
     #four {grid-area:main;}
-    #four article:first-child {padding-bottom:1rem; }
+    #four article:first-child {padding-bottom:2rem; }
     #five {background-color:#c2d5de; grid-area:quotes;}
     #six {background-color:#026396; grid-area:footer;}
 
@@ -84,7 +84,7 @@
 ------------------------------ */
 
     p, li {margin-bottom:1rem;}
-    h1, h2  {color:#026396; font-family:'Philosopher', Verdana, Arial, helvetica, sans-serif; font-weight:700; line-height:1.2; margin-bottom:1.5rem;}
+    h1, h2  {color:#026396; font-family:'Philosopher', Verdana, Arial, helvetica, sans-serif; font-weight:700; line-height:1.2; margin:0 0 1.5rem 0;}
     h1 {font-size:3rem;}
     h2 {font-size:2.5rem; margin-top:2rem;}
     header h2, footer {background-color:#026396;}

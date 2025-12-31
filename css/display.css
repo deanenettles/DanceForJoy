@@ -86,3 +86,5 @@
     .facebook td:first-child {width:30%;}   
     .facebook tr img {width:100%;}
     .facebook tr h3 {padding-left:1rem;}
+
+    .display p {text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);}
