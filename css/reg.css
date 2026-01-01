@@ -44,17 +44,13 @@ a.registration.shadow.c.ui-link:link, a.registration.shadow.c.ui-link:visited, f
    
 .c5 {background-color:rgba(2,99,149,1.00);}
 
-#footermenu li a, #footermenu a {color:white;}
-footer a.ui-link:link {color:white;}
-footer a.ui-link:visited {color:white;}
-
 
 h3 {color:red; margin-top:3rem; font-size:1.75rem;}
 p {margin:0 2rem;}
 h5 {margin:0 2rem; padding:0; font-size:1.5rem;}
-div.panel {padding:0 0 3rem 0;}
+.panel {padding:0 0 3rem 0;}
 
-div.donate {width:60%; margin:20px auto;}
+.donate {width:60%; margin:20px auto;}
 .donate img {width:100%;}
 .donate h3 {margin-top:10px;}
 
