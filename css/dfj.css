@@ -22,15 +22,20 @@
         padding:20px;
     }
 
+    #wrapper.single {
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "quotes"
+        "footer";
+    }
+
     #one {grid-area:header;}
     #two {grid-area:nav;}
     #three {
         grid-area:feature; 
-        /*display:flex; 
-        justify-content:center; 
-        flex-wrap:wrap; 
-        flex-direction:row;
-        gap:1rem;*/
     }
     #four {grid-area:main;}
     #four article:first-child {padding-bottom:2rem; }
@@ -42,6 +47,66 @@
     .hide {display:none;}
 
     .box {background-color:white; padding:1.5rem; margin-bottom:1.5rem;}
+
+/* --------------------------
+		COLUMNS
+------------------------------ */
+
+    #intro, #col {
+        margin-bottom:3rem;
+    }
+    
+    #col {
+        -webkit-column-gap: 3rem; /* Chrome, Safari, Opera */
+        -moz-column-gap: 3rem; /* Firefox */
+        column-gap: 3rem;
+        -webkit-column-width: 40rem; /* Chrome, Safari, Opera */
+        -moz-column-width: 40rem; /* Firefox */
+        column-width: 40rem;
+    }
+    
+    #col section{
+        break-inside:avoid;
+    }
+    
+
+    /* --------------------------
+		MEDIA
+------------------------------ */
+
+@media screen and (min-width:700px) {
+    #wrapper {
+    width:100%;
+    max-width:1000px;
+    margin:0 auto;
+    height: 100vh;
+    display:grid;
+    grid-template-columns:1fr 3fr;
+    grid-template-rows:1fr 1fr 3fr 1fr 1fr;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "feature main"
+    "quotes quotes"
+    "footer footer";
+    gap:20px 20px;
+    padding-bottom:20px;
+    }
+    #three {
+        flex-direction:column;
+        justify-content:flex-start;
+    }
+
+}
+#wrapper.single {
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "quotes quotes"
+    "footer footer";
+}
 
 /* --------------------------
 	FLOATS
@@ -228,7 +293,6 @@ a:hover.button, a:focus.button, a:active.button {color:white;}
 		NAV
 ------------------------------ */
 
-
 nav {text-align:center; }
 nav ul {list-style-type:none;}
 nav li {
@@ -291,36 +355,6 @@ nav li p {margin:0; padding:0; font-size:1.4rem;  font-weight:bold; color:white;
 .video-meta-container2 {margin-bottom:1.5rem; margin-top:2rem;}
 
 /* --------------------------
-		BLOCKS
------------------------------- */
-/*.block, .video-container {margin-bottom:1.5rem;}
-.block {
-		width:100%;
-		max-width:30rem;
-  		height:17.5rem;
-  		display:table;
-		background-color:white;
-}
-.blockplain {padding:0; margin:-1rem 0 0 -1rem;}
-.blockheadline {
-		color:white;
-		font-size:1.8rem;
-		font-style:normal;
-		line-height:1.2;
-		}
-.block p {
-		text-align:center;
-		vertical-align:bottom;
-		color:#ddd;
-		font-size:1.2rem;
-		font-weight:bold;
-		display:table-cell;
-		padding:1rem;
-		letter-spacing:.5px;
-		text-shadow: 0 .2rem .2rem rgba(0, 0, 0, .9);
-		} */
-
-/* --------------------------
 ROUNDED CORNERS
 ------------------------------ */
 
@@ -381,31 +415,3 @@ border-bottom-right-radius: 1rem;
 	background-image: -moz-linear-gradient(19% 75% 90deg, #A37A00, #CC9900);
 	background-color: #c90;}
 
-    /* --------------------------
-		MEDIA
------------------------------- */
-
-    @media screen and (min-width:700px) {
-        #wrapper {
-        width:100%;
-        max-width:1000px;
-        margin:0 auto;
-        height: 100vh;
-        display:grid;
-        grid-template-columns:1fr 3fr;
-        grid-template-rows:1fr 1fr 3fr 1fr 1fr;
-        grid-template-areas:
-        "header header"
-        "nav nav"
-        "feature main"
-        "quotes quotes"
-        "footer footer";
-        gap:20px 20px;
-        padding-bottom:20px;
-        }
-        #three {
-            flex-direction:column;
-            justify-content:flex-start;
-        }
-
-    }
