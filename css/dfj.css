@@ -90,14 +90,14 @@
     "quotes quotes"
     "footer footer";
     gap:2rem;
-    padding-bottom:1.5rem;
+    padding:2rem;
     }
     #three {
         flex-direction:column;
         justify-content:flex-start;
     }
-
 }
+
 #wrapper.single {
     grid-template-columns:1fr 1fr;
     grid-template-areas:
@@ -184,6 +184,8 @@
         }
 
     .feature:first-child {margin-top:0;} /* first .feature gets top of 0. if first element isn't .feature, it won't apply at all. */
+
+    .feature:has(.barheadinline) {margin-top:2rem;} /* first .feature gets top of 0. if first element isn't .feature, it won't apply at all. */
 
     .feature:last-child {margin-bottom:0;} /* last .feature gets bottom of 0. if first element isn't .feature, it won't apply at all. */    
 
