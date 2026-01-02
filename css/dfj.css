@@ -120,15 +120,32 @@
     }
     
     .floatrightdrop {
-        float: right;
-        margin: .6rem 2rem 1rem 2rem;
+        float: left;
+        margin: .6rem 0 1rem 2rem;
         clear: left;
-        width:45%;
+        width:100%;
     }
     .floatleftdrop {
         float: left;
-        margin: .2rem 2rem 0 0rem;
+        margin: .6rem 2rem 1rem 0;
         clear: left;
+        width:100%;
+    }
+
+    @media screen and (min-width:700px) {
+        .floatrightdrop {
+            float: right;
+            margin: .6rem 0 1rem 2rem;
+            clear: right;
+            width:45%;
+        }
+        .floatleftdrop {
+            float: left;
+            margin: .6rem 2rem 1rem 0;
+            clear: left;
+            width:45%;
+        }
+    
     }
 
     /* --------------------------
