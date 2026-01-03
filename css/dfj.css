@@ -279,11 +279,9 @@ a:active {
 
 registration:link, registration:hover, a.registration:focus, a.registration:visited, a.classdesc:link, a.classdesc:hover, a.classdesc:focus, a.classdesc:visited  {color:white;}
 
-footer a:link {color:wheat;}
-footer a:link:first-child {color:white;}
-footer a:visited {color:orange;}
-footer a:hover, footer a:visited:hover, footer a:active {color:tan;}
-footer p a:link, footer p a:hover { font-weight:400;}
+footer a:link, footer a:visited {color:white;}
+footer a:hover, footer a:focus, footer a:active {color:#ffd200;}
+
 a.out {padding-right:14px; background:url("../images/Icon_External_Link.png") no-repeat  right .7px padding-box;}
 
 .button {	
