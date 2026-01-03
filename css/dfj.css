@@ -19,7 +19,7 @@
         "quotes"
         "footer";
         gap:1rem 1rem;
-        padding:1rem;
+        padding:2rem;
     }
 
     #wrapper.single {
@@ -33,7 +33,7 @@
     }
 
     #one {grid-area:header;}
-    #two {grid-area:nav;}
+    #two {grid-area:nav; margin:-1rem 0 -1rem 0;}
     #three {
         grid-area:feature; 
     }
@@ -121,9 +121,9 @@
     }
     
     .floatrightdrop {
-        float: left;
+        float: right;
         margin: .6rem 0 1rem 2rem;
-        clear: left;
+        clear: right;
         width:100%;
     }
     .floatleftdrop {
@@ -174,6 +174,7 @@
     h1 {font-size:3rem;}
     h2 {font-size:2.5rem; margin-top:2rem;}
     header h2, footer {background-color:#026396;}
+
     h3 {margin:2rem 0 1.5rem 0;}
     .barheadinline h3 {margin:0;}
 
@@ -205,6 +206,11 @@
 
     .feature:has(.barheadinline) {margin-top:2rem;} /* first .feature gets top of 0. if first element isn't .feature, it won't apply at all. */
 
+    .feature:has(.barheadinline):first-child
+    {
+       margin-top: 0;
+   }
+
     .feature:last-child {margin-bottom:0;} /* last .feature gets bottom of 0. if first element isn't .feature, it won't apply at all. */    
 
     p + .feature {margin-top:2rem;} /* a .feature immediately preceeded by a p element */
@@ -234,9 +240,13 @@ header {
         background-position: top left;
         background-size: cover;
         }
-        header img {width:70%; max-width:500px; margin:1rem 1rem 0 1rem ;}
+        header img {width:80%; max-width:600px; margin:1rem 1rem 0 1rem ;}
         h1 {margin-bottom:0;}
-        header h2 {color:white; margin:0; padding:1rem 2rem;}
+        header h2 {color:white; margin:0; padding:1rem 2rem; font-size:1.75rem;}
+
+    @media screen and (min-width:700px) {
+        header h2 {font-size:2rem;}
+    }
     
 
     /* --------------------------
