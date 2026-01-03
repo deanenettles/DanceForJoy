@@ -277,7 +277,7 @@ a:active {
 	font-weight: bold;
 }
 
-registration:link, registration:hover, a.registration:focus, a.registration:visited, a.classdesc:link, a.classdesc:hover, a.classdesc:focus, a.classdesc:visited  {color:white;}
+a.registration:link, a.registration:hover, a.registration:focus, a.registration:visited, a.classdesc:link, a.classdesc:hover, a.classdesc:focus, a.classdesc:visited  {color:white;}
 
 footer a:link, footer a:visited {color:white;}
 footer a:hover, footer a:focus, footer a:active {color:#ffd200;}
