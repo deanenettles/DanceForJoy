@@ -10,7 +10,7 @@ form {display:block; margin-top:1rem;}
 #menu input[name="submit7"] {width:15%;}
 
 .collapsible {
-  background-color: #2b6092;
+  background-color: /*#2b6092*/ #b60000;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -21,7 +21,7 @@ form {display:block; margin-top:1rem;}
 }
 
 .active, .collapsible:hover, .collapsible:focus {
-  background-color: #5d9bc0;
+  background-color: /*#5d9bc0*/red;
 }
 
 .content {
@@ -39,5 +39,5 @@ button {
     font-size:larger;
 }
 
-.shopcart { width:100%; border:0; background-color:#2b6092}
-.shopcart:hover, .shopcart:focus {background-color:#5d9bc0}
+.shopcart { width:100%; border:0; background-color:/*#2b6092*/#b60000}
+.shopcart:hover, .shopcart:focus {background-color:/*#5d9bc0*/red}

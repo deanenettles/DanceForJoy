@@ -1,7 +1,7 @@
     html {box-sizing:border-box; margin:0; padding:0; font-family:'Alegreya+Sans', Verdana, Arial, helvetica, sans-serif; font-weight:400; font-size:62.5%; -webkit-text-size-adjust: 100%;line-height:1.4;}
     * {box-sizing:inherit; margin:0; padding:0;}
      {outline:1px solid red;}
-
+    body {background-color:#893fb2;}
     #wrapper {
         font-size:1.4rem; 
         width:100%;
@@ -40,7 +40,7 @@
     #four {grid-area:main;}
     #four article:first-child {padding-bottom:2rem; }
     #five {background-color:#c2d5de; grid-area:quotes;}
-    #six {background-color:#026396; grid-area:footer;}
+    #six {background-color:red; grid-area:footer;}
 
     #five, #six {padding:1.5rem 3rem 2rem 3rem;}
 
@@ -52,8 +52,10 @@
 		COLUMNS
 ------------------------------ */
 
-    #intro, #col {
-        margin-bottom:3rem;
+    #intro, #col { /* added for new color */
+        margin-bottom:2rem;
+        background-color:white; 
+        padding:2rem;
     }
     
     #col {
@@ -173,7 +175,7 @@
     h1, h2  {color:#026396; font-family:'Philosopher', Verdana, Arial, helvetica, sans-serif; font-weight:700; line-height:1.2; margin:0 0 1.5rem 0;}
     h1 {font-size:3rem;}
     h2 {font-size:2.5rem; margin-top:2rem;}
-    header h2, footer {background-color:#026396;}
+    header h2, footer {background-color:/*#026396*/ red;}
 
     h3 {margin:2rem 0 1.5rem 0;}
     .barheadinline h3 {margin:0;}
@@ -232,10 +234,13 @@ header {
         width: 100%;
         padding-bottom: 1rem;
         padding: 0;
+        background-color:#4729a6;
+        /*
         background-image: -webkit-linear-gradient(270deg,rgba(2,99,149,1.00) 0%,rgba(56,148,187,1.00) 46.50%,rgba(141,225,249,1.00) 90.47%);
         background-image: -moz-linear-gradient(270deg,rgba(2,99,149,1.00) 0%,rgba(56,148,187,1.00) 46.50%,rgba(141,225,249,1.00) 90.47%);
         background-image: -o-linear-gradient(270deg,rgba(2,99,149,1.00) 0%,rgba(56,148,187,1.00) 46.50%,rgba(141,225,249,1.00) 90.47%);
         background-image: linear-gradient(180deg,rgba(2,99,149,1.00) 0%,rgba(56,148,187,1.00) 46.50%,rgba(141,225,249,1.00) 90.47%);
+        */
         background-repeat: no-repeat;
         background-position: top left;
         background-size: cover;
@@ -253,7 +258,7 @@ header {
 		FOOTER
 ------------------------------ */
 
-footer {font-size:1.2rem;}
+footer {font-size:1.2rem; }
 #footermenu li {display:inline-block; color:white; margin:0 1rem 1rem 0;}
 footer p {color:white;  line-height:1.6; margin:0; }
 #footercontact {margin-bottom:1rem;}
