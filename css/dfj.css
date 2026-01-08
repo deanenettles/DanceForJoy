@@ -1,7 +1,7 @@
     html {box-sizing:border-box; margin:0; padding:0; font-family:'Alegreya+Sans', Verdana, Arial, helvetica, sans-serif; font-weight:400; font-size:62.5%; -webkit-text-size-adjust: 100%;line-height:1.4;}
     * {box-sizing:inherit; margin:0; padding:0;}
      {outline:1px solid red;}
-    body {background-color:#893fb2;}
+    body {background-color:#d6d9f8;}
     #wrapper {
         font-size:1.4rem; 
         width:100%;
@@ -39,7 +39,7 @@
     }
     #four {grid-area:main;}
     #four article:first-child {padding-bottom:2rem; }
-    #five {background-color:#c2d5de; grid-area:quotes;}
+    #five {background-color:#adb2e6;/*c2d5de*/ grid-area:quotes;}
     #six {background-color:red; grid-area:footer;}
 
     #five, #six {padding:1.5rem 3rem 2rem 3rem;}
