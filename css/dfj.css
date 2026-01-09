@@ -1,7 +1,7 @@
     html {box-sizing:border-box; margin:0; padding:0; font-family:'Alegreya+Sans', Verdana, Arial, helvetica, sans-serif; font-weight:400; font-size:62.5%; -webkit-text-size-adjust: 100%;line-height:1.4;}
     * {box-sizing:inherit; margin:0; padding:0;}
      {outline:1px solid red;}
-    body {background-color:#d6d9f8;}
+    body {background-color:/*#d6d9f8*/#e7d7f9;}
     #wrapper {
         font-size:1.4rem; 
         width:100%;
@@ -32,7 +32,7 @@
         "footer";
     }
 
-    #one {grid-area:header;}
+    #one {grid-area:header; border:8px solid #893fb2;}
     #two {grid-area:nav; margin:-1rem 0 -1rem 0;}
     #three {
         grid-area:feature; 
@@ -40,7 +40,7 @@
     #four {grid-area:main;}
     #four article:first-child {padding-bottom:2rem; }
     #five {background-color:#adb2e6;/*c2d5de*/ grid-area:quotes;}
-    #six {background-color:red; grid-area:footer;}
+    #six {grid-area:footer;}
 
     #five, #six {padding:1.5rem 3rem 2rem 3rem;}
 
@@ -175,7 +175,7 @@
     h1, h2  {color:#026396; font-family:'Philosopher', Verdana, Arial, helvetica, sans-serif; font-weight:700; line-height:1.2; margin:0 0 1.5rem 0;}
     h1 {font-size:3rem;}
     h2 {font-size:2.5rem; margin-top:2rem;}
-    header h2, footer {background-color:/*#026396*/ red;}
+    header h2, footer {background-color:/*#026396*/ #c70202;}
 
     h3 {margin:2rem 0 1.5rem 0;}
     .barheadinline h3 {margin:0;}
@@ -445,11 +445,14 @@ border-bottom-left-radius: 1rem;
 -webkit-border-bottom-right-radius: 1rem;
 border-bottom-right-radius: 1rem;
 }
+
+header h2 {border-radius:0;}
+
     /* --------------------------
 		COLOR
 ------------------------------ */
 .brown {
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#CC9900), to(#A37A00));
-	background-image: -moz-linear-gradient(19% 75% 90deg, #A37A00, #CC9900);
-	background-color: #c90;}
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#4729a6), to(#2a107c));
+	background-image: -moz-linear-gradient(19% 75% 90deg, #4729a6, #2a107c);
+	background-color: #4729a6;}
 
